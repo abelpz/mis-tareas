@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis tareas</title>
+</head>
+<body>
+  <main>
+    <section id="tareas">
+      <h1>Mis tareas</h1>
+      <div id="formulario-tareas">
+        <input type="text" id="texto-tarea"/> <button id="agregar-tarea" onclick="agregarTarea()">Agregar tarea</button>
+      </div>
+      <div>
+        <ul id="lista-tareas">
+          <li id="tarea-0" class="tarea" data-tarea-id="0">
+            <span>Hacer las compras</span>
+            <button class="borrar-tarea" data-tarea-id="0">eliminar</button>
+            <button class="completar-tarea" data-tarea-id="0">completar</button>
+          </li>
+          <li id="tarea-1" class="tarea" data-tarea-id="1">
+            <span>Hacer ejercicio</span>
+            <button class="borrar-tarea" data-tarea-id="1">eliminar</button>
+            <button class="completar-tarea" data-tarea-id="1">completar</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
