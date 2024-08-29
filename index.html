@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Mis tareas</title>
 </head>
 <body>
@@ -10,22 +11,27 @@
     <section id="tareas">
       <h1>Mis tareas</h1>
       <div id="formulario-tareas">
-        <input type="text" id="texto-tarea"/> <button id="agregar-tarea" onclick="agregarTarea()">Agregar tarea</button>
+        <input type="text" id="texto-tarea" placeholder="hacer ejercicio"/> 
+        <button id="boton-agregar-tarea" onclick="agregarTarea()">
+          Agregar tarea
+        </button>
       </div>
-      <div>
-        <ul id="lista-tareas">
-          <li id="tarea-0" class="tarea" data-tarea-id="0">
-            <span>Hacer las compras</span>
+      <ul id="lista-tareas">
+        <li id="tarea-0" class="tarea completada" data-tarea-id="0">
+          <span class="descripcion">Hacer las compras</span>
+          <div class="acciones">
             <button class="borrar-tarea" data-tarea-id="0">eliminar</button>
             <button class="completar-tarea" data-tarea-id="0">completar</button>
-          </li>
-          <li id="tarea-1" class="tarea" data-tarea-id="1">
-            <span>Hacer ejercicio</span>
+          </div>
+        </li>
+        <li id="tarea-1" class="tarea" data-tarea-id="1">
+          <span>Hacer ejercicio</span>
+          <div class="acciones">
             <button class="borrar-tarea" data-tarea-id="1">eliminar</button>
             <button class="completar-tarea" data-tarea-id="1">completar</button>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
 </body>
