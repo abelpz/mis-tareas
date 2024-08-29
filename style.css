@@ -45,6 +45,10 @@ main {
   cursor: pointer;
 }
 
+#boton-agregar-tarea:hover {
+  background-color: #0056b3;
+}
+
 #lista-tareas {
   margin-top: 1rem;
   padding: 0;
@@ -83,11 +87,6 @@ main {
 .acciones button.completar-tarea:hover {
   background-color: #19884e;
   color: #fff;
-}
-
-.tarea.completada .acciones button.completar-tarea:hover,
-.tarea.completada .acciones button.borrar-tarea:hover {
-  background-color: #777;
 }
 
 .tarea.completada .descripcion {
