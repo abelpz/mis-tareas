@@ -1,1 +1,0 @@
-const tareas = document
