@@ -26,7 +26,8 @@ main {
 } 
 
 #formulario-tareas {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto min-content;
   gap: 0.5rem;
 }
 
