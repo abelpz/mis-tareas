@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+#tareas {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+#tareas h1 {
+  margin-bottom: 1rem;
+  font-size: medium;
+} 
+
+#formulario-tareas {
+  display: grid;
+  grid-template-columns: auto min-content;
+  gap: 0.5rem;
+}
+
+#formulario-tareas input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+#boton-agregar-tarea {
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#boton-agregar-tarea:hover {
+  background-color: #0056b3;
+}
+
+#lista-tareas {
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.tarea {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarea.completada {
+  background-color: #e0e0e0;
+}
+
+.acciones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.acciones button {
+  padding: 0.5rem;
+  background-color: #eeeeee;
+  color: rgb(61, 61, 61);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.acciones button:hover {
+  background-color: #555;
+}
+
+.acciones button.borrar-tarea:hover {
+  background-color: #ff4658;
+  color: #fff;
+}
+
+.acciones button.completar-tarea:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.tarea.completada .descripcion {
+  text-decoration: line-through;
+  text-decoration-color: #0000007d;
+}
