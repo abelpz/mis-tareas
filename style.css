@@ -73,6 +73,8 @@ main {
 }
 
 .acciones button {
+  font-family: 'Material Symbols Outlined';
+  font-size: 1rem;
   padding: 0.5rem;
   background-color: #eeeeee;
   color: rgb(61, 61, 61);
@@ -85,12 +87,12 @@ main {
   background-color: #555;
 }
 
-.acciones button.borrar-tarea:hover {
+.acciones button.borrar:hover {
   background-color: #ff4658;
   color: #fff;
 }
 
-.acciones button.completar-tarea:hover {
+.acciones button.completar:hover {
   background-color: #28a745;
   color: #fff;
 }
